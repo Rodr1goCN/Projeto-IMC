@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: antiquewhite;
+    --cor2: white;
+    --cor3: red;
+    --cor4: black;
+    --cor5: brown;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    outline: none;
+}
+body, html{
+    background-color:var(--cor1);
+    font-size:1.1em;
+    line-height: 1.5em;
+}
+
+.container{
+    max-width: 640px;
+    margin: 30px auto;
+    background-color: var(--cor2) ;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 3px 2px 3px 2px #a52a2a17;
+}
+
+form input, form label, form button{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input{
+    font-size: 20px;
+    height: 35px;
+}
+
+form input:focus{
+    outline: 2px solid var(--cor1);
+    box-shadow: 1px 1px 5px 2px var(--cor1);
+}
+
+form button{
+    border: 1px solid black;
+    background-color: var(--cor2);
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+    height: 35px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+form button:hover{
+    background-color: var(--cor1);
+    color: var(--cor4);
+}
+
+table > thead{
+    background-color: var(--cor4);
+    color: var(--cor2);
+}
+
+table{
+    margin: 20px 0;
+    border: 1px solid var(--cor4);
+    width: 100%;
+}
+
+table, th, td{
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+.dir{
+    text-align: right;
+}
+
+.esq{
+    text-align: left;
+}
+
+table > tbody > tr:nth-child(odd){
+    background:#f2f2f2;
+}
+
+h2{
+    margin-bottom:13px ;
+}
+
+.result{
+    background-color: var(--cor4);
+    color: var(--cor2);
+    height: 35px;
+    padding-left: 5px;
+    padding-top: 2px;
+    display: none;
+}

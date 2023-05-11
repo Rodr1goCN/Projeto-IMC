@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="container">
+        <h1>Tabela IMC</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <h3 class="esq">IMC</h3>
+                    </th>
+                    <th>
+                        <h3 class="dir">Resultado</h3>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Menos do que 18,5</td>
+                    <td class="dir">Abaixo do peso</td>
+                </tr>
+                <tr>
+                    <td>Entre 18,5 e 24,9</td>
+                    <td class="dir">Peso normal</td>
+                </tr>
+                <tr>
+                    <td>Entre 25 e 29,9</td>
+                    <td class="dir">Sobrepeso</td>
+                </tr>
+                <tr>
+                    <td>Entre 30 e 34,9</td>
+                    <td class="dir">Obesidade grau 1</td>
+                </tr>
+                <tr>
+                    <td>Entre 35 e 39,9</td>
+                    <td class="dir">Obesidade grau 2</td>
+                </tr>
+                <tr>
+                    <td>Mais do que 40</td>
+                    <td class="dir">Obesidade grau 3</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Calcule seu IMC</h2>
+        <form action="" method="get" class="form">
+            <label for="cPeso">Peso:</label>
+            <input type="number" id="cPeso" placeholder="Digite seu peso">
+
+            <label for="cAlt">Altura:</label>
+            <input type="number" id="cAlt" placeholder="Digite sua altura em cm">
+
+            <button>Enviar</button>
+        </form>
+        <div class="result"></div>
+    </section>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
